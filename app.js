@@ -10,7 +10,7 @@
         console.log(userMessage);
     
         try {
-            const response = await fetch('http://localhost:3000/chat', { // Use localhost URL here
+            const response = await fetch('https://sweedney.vercel.app/chat', { // Use localhost URL here
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
