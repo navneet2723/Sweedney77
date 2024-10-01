@@ -7,7 +7,11 @@ const path = require('path'); // Add this for path handling
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(cors());
+app.use(cors({
+  origin: "https://sweedney.vercel.app/", // Allow requests from this origin
+  methods: ["GET", "POST"], // Specify allowed HTTP methods
+  allowedHeaders: ["Content-Type"] 
+}));
 app.use(express.json());
 app.use(express.static(path.join(__dirname))); // Serve static files from the root directory
 
