@@ -74,7 +74,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html')); // Use path.join for cross-platform compatibility
 });
 
-app.post('https://sweedney.vercel.app/chat', async (req, res) => {
+app.post('/chat', async (req, res) => {
     try {
         const userInput = req.body?.userInput;
         console.log('incoming /chat req', userInput);
