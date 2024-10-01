@@ -1,0 +1,10 @@
+{
+    "name": "Sweedney",
+    "version": "1.0",
+    "description": "This is the tester extension",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html"
+    }
+  }
+  
